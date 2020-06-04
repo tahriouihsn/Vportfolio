@@ -1,8 +1,12 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div>
+    <b-nav class="mt-4" align="center">
+    <b-nav-item active>Home</b-nav-item>
+    <b-nav-item>Projects</b-nav-item>
+    <b-nav-item>Another Link</b-nav-item>
+    <b-nav-item disabled>Disabled</b-nav-item>
+    </b-nav>
     </div>
     <router-view />
   </div>
@@ -17,16 +21,5 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
